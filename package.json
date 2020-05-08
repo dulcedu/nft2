@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/dulcedu/nft2/issues"
   },
-  "homepage": "https://github.com/dulcedu/nft2#readme"
+  "homepage": "https://github.com/dulcedu/nft2#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "2.5.0",
+    "@truffle/hdwallet-provider": "1.0.34"
+  }
 }
