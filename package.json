@@ -1,0 +1,29 @@
+{
+  "name": "nft2",
+  "version": "1.0.0",
+  "description": "ERC721 token with OpenZeppelin, React, and Truffle - RSK Workshop - Walkthrough",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dulcedu/nft2.git"
+  },
+  "keywords": [
+    "blockchain",
+    "smart_contract",
+    "erc721",
+    "openzeppelin",
+    "nft"
+  ],
+  "author": "Dulce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dulcedu/nft2/issues"
+  },
+  "homepage": "https://github.com/dulcedu/nft2#readme"
+}
