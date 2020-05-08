@@ -24,6 +24,31 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
+const fs = require('fs');
+const path = require('path');
+
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+
+const mnemonic =
+  fs.readFileSync(".secret")
+    .toString()
+    .trim();
+if (!mnemonic || mnemonic.split(' ').length !== 12) {
+  throw new Error('unable to retrieve mnemonic from .secret');
+}
+
+const gasPriceTestnetRaw =
+  fs.readFileSync(".gas-price-testnet.json")
+    .toString()
+    .trim();
+const gasPriceTestnet = parseInt(JSON.parse(gasPriceTestnetRaw).result, 16);
+if (typeof gasPriceTestnet !== 'number' || isNaN(gasPriceTestnet)) {
+  throw new Error('unable to retrieve network gas price from .gas-price-testnet.json');
+}
+
+//console.log('mnemonic:', mnemonic);
+console.log('gas price on testnet:', gasPriceTestnet);
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
