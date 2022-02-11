@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/dulcedu/nft2#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "2.5.0",
+    "@openzeppelin/contracts": "4.4.2",
     "@truffle/hdwallet-provider": "1.0.34"
   }
 }
